@@ -1,7 +1,7 @@
 app-id: de.willuhn.Jameica
 branch: stable
 runtime: org.freedesktop.Platform
-runtime-version: '18.08'
+runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -29,8 +29,8 @@ modules:
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.8.4.zip
-        sha256: 644ff52c977739d9376da2a3adaaa4ffc36110ee2485fd6c2eb17e5cfcb9127a        
+        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.8.5.zip
+        sha1: 2f4b200852184f3d524e3f5a7775f1a93a83f388        
         dest: jameica
       - type: file
         path: jameica-wrapper.sh
