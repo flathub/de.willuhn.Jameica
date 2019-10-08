@@ -1,6 +1,5 @@
 app-id: de.willuhn.Jameica
-default-branch: beta
-desktop-file-name-suffix: ' (Beta)'
+default-branch: stable
 runtime: org.freedesktop.Platform
 runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
