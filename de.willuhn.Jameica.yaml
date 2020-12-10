@@ -28,7 +28,7 @@ modules:
       - mv jameica /app/
       - mkdir -p /app/share/icons/hicolor/64x64/apps
       - install -T /app/jameica/jameica-icon.png /app/share/icons/hicolor/64x64/apps/de.willuhn.Jameica.png
-      - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.appdata.xml
+      - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.metainfo.xml
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
@@ -40,4 +40,4 @@ modules:
       - type: file
         path: de.willuhn.Jameica.desktop
       - type: file
-        path: de.willuhn.Jameica.appdata.xml
+        path: de.willuhn.Jameica.metainfo.xml
