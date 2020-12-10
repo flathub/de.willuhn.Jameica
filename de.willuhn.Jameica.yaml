@@ -1,15 +1,18 @@
 app-id: de.willuhn.Jameica
-default-branch: stable
-runtime: org.freedesktop.Platform
-runtime-version: '19.08'
-sdk: org.freedesktop.Sdk
+default-branch: beta
+runtime: org.gnome.Platform
+runtime-version: '3.38'
+sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
 command: jameica-wrapper.sh
 finish-args:
   - --socket=x11
+  - --socket=wayland
+  - --socket=session-bus
   - --share=ipc
   - --share=network
+  - --device=dri
   - --env=PATH=/usr/bin:/app/bin:/app/jre/bin
   - --env=JAVA_HOME=/app/jre
 modules:
@@ -29,8 +32,8 @@ modules:
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.8.6.zip
-        sha1: 8f17fa742b236f26420bbf1819bf12a3e679527c
+        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.0.zip
+        sha1: 108fdc342b98690c36df4df9e2d810414743ab1d
         dest: jameica
       - type: file
         path: jameica-wrapper.sh
