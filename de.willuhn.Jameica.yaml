@@ -1,7 +1,7 @@
 app-id: de.willuhn.Jameica
-default-branch: beta
+default-branch: stable
 runtime: org.gnome.Platform
-runtime-version: '3.38'
+runtime-version: '41'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -13,6 +13,7 @@ finish-args:
   - --share=ipc
   - --share=network
   - --device=dri
+  - --filesystem=home
   - --env=PATH=/usr/bin:/app/bin:/app/jre/bin
   - --env=JAVA_HOME=/app/jre
 modules:
@@ -28,16 +29,16 @@ modules:
       - mv jameica /app/
       - mkdir -p /app/share/icons/hicolor/64x64/apps
       - install -T /app/jameica/jameica-icon.png /app/share/icons/hicolor/64x64/apps/de.willuhn.Jameica.png
-      - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.appdata.xml
+      - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.metainfo.xml
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.0.zip
-        sha1: 108fdc342b98690c36df4df9e2d810414743ab1d
+        url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.1.zip
+        sha1: b50db93b09ebed1b508791318dfbd8bf643b6996
         dest: jameica
       - type: file
         path: jameica-wrapper.sh
       - type: file
         path: de.willuhn.Jameica.desktop
       - type: file
-        path: de.willuhn.Jameica.appdata.xml
+        path: de.willuhn.Jameica.metainfo.xml
