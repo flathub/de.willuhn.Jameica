@@ -33,7 +33,7 @@ modules:
     sources:
       - type: archive
         url: https://www.willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.1.zip
-        sha256: 6A7AC89E8CBB0D301F04719FC3FC11CA25A0C8EBDD8A137C8185E8FC3F35DB8C
+        sha256: 6a7ac89e8cbb0d301f04719fc3fc11ca25a0c8ebdd8a137c8185e8fc3f35db8c
         dest: jameica
       - type: file
         path: jameica-wrapper.sh
