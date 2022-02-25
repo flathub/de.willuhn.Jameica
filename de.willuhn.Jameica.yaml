@@ -15,6 +15,8 @@ finish-args:
   - --device=dri
   - --env=PATH=/usr/bin:/app/bin:/app/jre/bin
   - --env=JAVA_HOME=/app/jre
+  - --filesystem=home:rw
+  - --nofilesystem=home/.*
 modules:
   - name: openjdk
     buildsystem: simple
