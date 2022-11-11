@@ -37,6 +37,12 @@ modules:
         url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.2.zip
         sha1: bea9dd098792c363957b7042f3fa88e9c5784c71
         dest: jameica
+        only-arches: x86_64
+      - type: archive
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.10.2.zip
+        sha1: aa337b12be3d6873a7da1b74b3beed4e4090cd37
+        dest: jameica
+        only-arches: aarch64
       - type: file
         path: jameica-wrapper.sh
       - type: file
