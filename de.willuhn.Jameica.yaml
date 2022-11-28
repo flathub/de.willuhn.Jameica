@@ -1,15 +1,17 @@
 app-id: de.willuhn.Jameica
 default-branch: stable
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk11
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: jameica-wrapper.sh
 finish-args:
   - --socket=x11
   - --socket=wayland
-  - --socket=session-bus
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.gnome.SessionManager
   - --share=ipc
   - --share=network
   - --device=dri
@@ -21,7 +23,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   - name: jameica
     buildsystem: simple
