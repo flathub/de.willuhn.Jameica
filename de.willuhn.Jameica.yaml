@@ -36,8 +36,8 @@ modules:
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.2.zip
-        sha1: bea9dd098792c363957b7042f3fa88e9c5784c71
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.3.zip
+        sha256: b72dfdc4ce000c23c8924c7dadc644285dad0aee9fb6f11fc431b284c6138490
         dest: jameica
       - type: file
         path: jameica-wrapper.sh
