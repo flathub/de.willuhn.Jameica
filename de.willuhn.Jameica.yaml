@@ -18,7 +18,7 @@ finish-args:
   - --env=PATH=/usr/bin:/app/bin:/app/jre/bin
   - --env=JAVA_HOME=/app/jre
   - --filesystem=home:rw
-  - --filesystem=xdg-config/gtk-3.0:ro
+  # - --filesystem=xdg-config/gtk-3.0:ro
 modules:
   - name: openjdk
     buildsystem: simple
@@ -29,7 +29,9 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm755 -t /app/bin jameica-wrapper.sh
+      #- unzip jameica.zip -d jameica/
       - mv jameica /app/
+      #- rm jameica.zip
       - mkdir -p /app/share/icons/hicolor/64x64/apps
       - install -T /app/jameica/jameica-icon.png /app/share/icons/hicolor/64x64/apps/de.willuhn.Jameica.png
       - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.metainfo.xml
@@ -38,7 +40,13 @@ modules:
       - type: archive
         url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.4.zip
         sha256: 3dc709e51e1d9e36fabd52cf6d995fdde9c3d8d62051b9b6f499badb3a68ec19
-        dest: jameica
+        dest-filename: jameica.zip
+        only-arches: [x86_64]
+      - type: archive
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.10.4.zip
+        sha256: 394962aa9ed851ea6829e599140a71339c85cb8ab5550b75634046b845645e42
+        dest-filename: jameica.zip
+        only-arches: [aarch64]
       - type: file
         path: jameica-wrapper.sh
       - type: file
