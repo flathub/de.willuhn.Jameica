@@ -30,7 +30,7 @@ modules:
     build-commands:
       - install -Dm755 -t /app/bin jameica-wrapper.sh
       #- unzip jameica.zip -d jameica/
-      #- mv jameica /app/
+      - mv jameica /app/
       #- rm jameica.zip
       - mkdir -p /app/share/icons/hicolor/64x64/apps
       - install -T /app/jameica/jameica-icon.png /app/share/icons/hicolor/64x64/apps/de.willuhn.Jameica.png
