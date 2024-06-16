@@ -14,16 +14,16 @@
     </p>
     <p xml:lang="de">Jameica übernimmt hierbei einen großen Teil von wiederkehrenden Aufgaben wie:</p>
       <ul>
-        <li>Gewährleistung eines einheitlichen "Look &amp; Feel"</li>
-        <li>Strikte Trennung von Programm- und Benutzerdaten</li>
-        <li>Standardisierter Zugriff auf Konfigurationsdateien</li>
-        <li>Gemeinsame Navigations- und Menü-Elemente</li>
-        <li>Synchroner und asynchroner Datenaustausch zwischen Plugins (via Messaging)</li>
-        <li>Unterstützung bei Client-Server-Kommunikation via RMI, XML-RPC oder SOAP</li>
-        <li>Vereinfachte Nutzung von Verschlüsselungsfunktionen (integriertes Wallet-System)</li>
-        <li>"Headless"-Support (Server-Modus ohne grafische Benutzeroberfläche)</li>
-        <li>Lifecycle-Management</li>
-        <li>Logging</li>
+        <li xml:lang="de">Gewährleistung eines einheitlichen "Look &amp; Feel"</li>
+        <li xml:lang="de">Strikte Trennung von Programm- und Benutzerdaten</li>
+        <li xml:lang="de">Standardisierter Zugriff auf Konfigurationsdateien</li>
+        <li xml:lang="de">Gemeinsame Navigations- und Menü-Elemente</li>
+        <li xml:lang="de">Synchroner und asynchroner Datenaustausch zwischen Plugins (via Messaging)</li>
+        <li xml:lang="de">Unterstützung bei Client-Server-Kommunikation via RMI, XML-RPC oder SOAP</li>
+        <li xml:lang="de">Vereinfachte Nutzung von Verschlüsselungsfunktionen (integriertes Wallet-System)</li>
+        <li xml:lang="de">"Headless"-Support (Server-Modus ohne grafische Benutzeroberfläche)</li>
+        <li xml:lang="de">Lifecycle-Management</li>
+        <li xml:lang="de">Logging</li>
       </ul>
   </description>
   <url type="homepage">https://www.willuhn.de/products/jameica/</url>
