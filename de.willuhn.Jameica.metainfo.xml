@@ -10,26 +10,23 @@
   <description>
     <p>Jameica is an Application-Platform written in Java containing a SWT-UI. It provides different services (GUI-Toolkit, Logging, Security, Backup, Lifecycle-Management, Message-Bus) to the installed plugins. It's a kind of runtime environment similar to OSGi.
     </p>
-  </description>
-  <description xml:lang="de">
-    <p>Die Jameica-Plattform ist eine freie Laufzeit-Umgebung für Java-Anwendungen, die in Form von Plugins implementiert werden können.
+    <p xml:lang="de">Die Jameica-Plattform ist eine freie Laufzeit-Umgebung für Java-Anwendungen, die in Form von Plugins implementiert werden können.
     </p>
-    <p>Jameica übernimmt hierbei einen großen Teil von wiederkehrenden Aufgaben wie:
+    <p xml:lang="de">Jameica übernimmt hierbei einen großen Teil von wiederkehrenden Aufgaben wie:</p>
       <ul>
-        <li>Gewährleistung eines einheitlichen "Look &amp; Feel"</li>
-        <li>Strikte Trennung von Programm- und Benutzerdaten</li>
-        <li>Standardisierter Zugriff auf Konfigurationsdateien</li>
-        <li>Gemeinsame Navigations- und Menü-Elemente</li>
-        <li>Synchroner und asynchroner Datenaustausch zwischen Plugins (via Messaging)</li>
-        <li>Unterstützung bei Client-Server-Kommunikation via RMI, XML-RPC oder SOAP</li>
-        <li>Vereinfachte Nutzung von Verschlüsselungsfunktionen (integriertes Wallet-System)</li>
-        <li>"Headless"-Support (Server-Modus ohne grafische Benutzeroberfläche)</li>
-        <li>Lifecycle-Management</li>
-        <li>Logging</li>
+        <li xml:lang="de">Gewährleistung eines einheitlichen "Look &amp; Feel"</li>
+        <li xml:lang="de">Strikte Trennung von Programm- und Benutzerdaten</li>
+        <li xml:lang="de">Standardisierter Zugriff auf Konfigurationsdateien</li>
+        <li xml:lang="de">Gemeinsame Navigations- und Menü-Elemente</li>
+        <li xml:lang="de">Synchroner und asynchroner Datenaustausch zwischen Plugins (via Messaging)</li>
+        <li xml:lang="de">Unterstützung bei Client-Server-Kommunikation via RMI, XML-RPC oder SOAP</li>
+        <li xml:lang="de">Vereinfachte Nutzung von Verschlüsselungsfunktionen (integriertes Wallet-System)</li>
+        <li xml:lang="de">"Headless"-Support (Server-Modus ohne grafische Benutzeroberfläche)</li>
+        <li xml:lang="de">Lifecycle-Management</li>
+        <li xml:lang="de">Logging</li>
       </ul>
-    </p>
   </description>
-  <url type="homepage">https://www.willuhn.de/products/jameica//</url>
+  <url type="homepage">https://www.willuhn.de/products/jameica/</url>
   <releases>
     <release date="2023-04-14" version="2.10.4">
       <url>https://willuhn.de/wiki/doku.php?id=hibiscus_2.10#jameica_2104_14042023</url>
