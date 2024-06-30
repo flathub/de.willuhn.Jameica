@@ -18,7 +18,6 @@ finish-args:
   - --env=PATH=/usr/bin:/app/bin:/app/jre/bin
   - --env=JAVA_HOME=/app/jre
   - --filesystem=home:rw
-  - --filesystem=xdg-config/gtk-3.0:ro
 modules:
   - name: openjdk
     buildsystem: simple
@@ -30,8 +29,8 @@ modules:
     build-commands:
       - install -Dm755 -t /app/bin jameica-wrapper.sh
       - mv jameica /app/
-      - mkdir -p /app/share/icons/hicolor/64x64/apps
-      - install -T /app/jameica/jameica-icon.png /app/share/icons/hicolor/64x64/apps/de.willuhn.Jameica.png
+      - mkdir -p /app/share/icons/hicolor/256x256/apps
+      - install -Dm644 -t /app/share/icons/hicolor/256x256/apps/ de.willuhn.Jameica.png
       - install -Dm644 -t /app/share/metainfo de.willuhn.Jameica.metainfo.xml
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
@@ -45,3 +44,5 @@ modules:
         path: de.willuhn.Jameica.desktop
       - type: file
         path: de.willuhn.Jameica.metainfo.xml
+      - type: file
+        path: de.willuhn.Jameica.png
