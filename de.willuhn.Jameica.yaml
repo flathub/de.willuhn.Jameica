@@ -1,7 +1,7 @@
 app-id: de.willuhn.Jameica
 default-branch: stable
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '48'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk17
@@ -35,13 +35,13 @@ modules:
       - install -Dm644 -t /app/share/applications de.willuhn.Jameica.desktop
     sources:
       - type: archive
-        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.4.zip
-        sha256: 3dc709e51e1d9e36fabd52cf6d995fdde9c3d8d62051b9b6f499badb3a68ec19
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linux64-2.10.5.zip
+        sha256: d5d81f2a53b41599224fc71c2ad80fe28a8ebea9dc94faad776cf58da8b63eac
         dest: jameica
         only-arches: [x86_64]
       - type: archive
-        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.10.4.zip
-        sha256: 394962aa9ed851ea6829e599140a71339c85cb8ab5550b75634046b845645e42
+        url: https://willuhn.de/products/jameica/releases/current/jameica/jameica-linuxarm64-2.10.5.zip
+        sha256: a255e5e72dc02c61788424f2b98cb9eeb119c6ff122e124a0fa7da07d775ddce
         dest: jameica
         only-arches: [aarch64]
       - type: file
