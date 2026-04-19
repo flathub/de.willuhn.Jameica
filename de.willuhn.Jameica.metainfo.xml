@@ -4,11 +4,15 @@
   <name>Jameica</name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <developer_name>Olaf Willuhn</developer_name>
+  <developer id="de.willuhn">
+    <name>Olaf Willuhn</name>
+  </developer>
   <summary>Application-Platform similar to OSGI</summary>
   <summary xml:lang="de">Laufzeit-Umgebung für Java-Anwendungen</summary>
   <description>
-    <p>Jameica is an Application-Platform written in Java containing a SWT-UI. It provides different services (GUI-Toolkit, Logging, Security, Backup, Lifecycle-Management, Message-Bus) to the installed plugins. It's a kind of runtime environment similar to OSGi.
+    <p>Jameica is an Application-Platform written in Java containing a SWT-UI. It provides different services
+      (GUI-Toolkit, Logging, Security, Backup, Lifecycle-Management, Message-Bus) to the installed plugins.
+      It's a kind of runtime environment similar to OSGi.
     </p>
     <p xml:lang="de">Die Jameica-Plattform ist eine freie Laufzeit-Umgebung für Java-Anwendungen, die in Form von Plugins implementiert werden können.
     </p>
@@ -27,6 +31,8 @@
       </ul>
   </description>
   <url type="homepage">https://www.willuhn.de/products/jameica/</url>
+  <url type="vcs-browser">https://github.com/willuhn/jameica</url>
+  <url type="help">https://www.willuhn.de/products/jameica/support.php</url>
   <releases>
     <release date="2025-10-29" version="2.12.0">
       <url>https://willuhn.de/wiki/doku.php?id=hibiscus_2.12#jameica_2120_29102025</url>
